@@ -1,0 +1,35 @@
+.profile {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  &__compact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    &__photo {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 35px;
+      img {
+        height: 100%;
+        border-radius: 100%;
+      }
+    }
+    &__names {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &__firstname {
+        font-size: 40px;
+      }
+      &__lastname {
+        font-size: 30px;
+        color: rgb(190, 190, 190);
+      }
+    }
+  }
+}
