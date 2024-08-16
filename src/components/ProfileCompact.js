@@ -1,14 +1,14 @@
 import "../styles/profileCompact.css";
 
-const ProfileCompact = ({imageLink, firstName, lastName}) => {
+const ProfileCompact = ({profileID}) => {
   return ( 
     <div className="profile__compact">
       <div className="profile__compact__photo">
-        <img src={imageLink} alt="" />
+        <img src="images/user.jpg" alt="" />
       </div>
       <div className="profile__compact__names">
-        <div className="profile__compact__names__firstname">{firstName}</div>
-        <div className="profile__compact__names__lastname">{lastName}</div>
+        <div className="profile__compact__names__firstname">John</div>
+        <div className="profile__compact__names__lastname">Doodle</div>
       </div>
     </div>
   );

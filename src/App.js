@@ -6,6 +6,7 @@ import Login from "./components/Login";
 import Profile from "./components/Profile";
 import AddItem from "./components/AddItem";
 import Marketplace from "./components/Marketplace";
+import ItemPage from "./components/ItemPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/profile" element={<Profile/>}></Route>
           <Route path="/additem" element={<AddItem/>}></Route>
           <Route path="/marketplace" element={<Marketplace/>}></Route>
+          <Route path="/item/:id" element={<ItemPage/>}></Route>
         </Routes>
       </Router>
     </div>

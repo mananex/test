@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import '../styles/marketplace.css';
+import ItemList from './ItemList';
 
 const Marketplace = () => {
   return ( 
@@ -12,7 +13,7 @@ const Marketplace = () => {
       </div>
       <div className="marketplace__active">
         <div className="marketplace__active__list">
-          
+          <ItemList ></ItemList>
         </div>
       </div>
     </div>

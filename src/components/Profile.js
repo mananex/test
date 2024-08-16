@@ -18,6 +18,10 @@ const Profile = () => {
           <div className="profile__information__age__label">Age:</div>
           <input className="profile__information__age__input" type="number" placeholder="your email here"/>
         </div>
+        <div className="profile__information__phonenumber field">
+          <div className="profile__information__phonenumber__label">Phone number:</div>
+          <input className="profile__information__phonenumber__input" type="number" placeholder="your email here"/>
+        </div>
         <button className="profile__information__leave__button">Log out</button>
       </div>
       <div className="profile__active">
