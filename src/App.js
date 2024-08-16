@@ -4,6 +4,8 @@ import Register from "./components/Register";
 import About from "./components/About";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
+import AddItem from "./components/AddItem";
+import Marketplace from "./components/Marketplace";
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
           <Route path="/register" element={<Register/>}></Route>
           <Route path="/login" element={<Login/>}></Route>
           <Route path="/profile" element={<Profile/>}></Route>
+          <Route path="/additem" element={<AddItem/>}></Route>
+          <Route path="/marketplace" element={<Marketplace/>}></Route>
         </Routes>
       </Router>
     </div>

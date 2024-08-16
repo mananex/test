@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ProfileCompact from "./ProfileCompact";
 import "../styles/profile.css";
-import Item from "./Item";
+import ItemList from "./ItemList";
 
 const Profile = () => {
   return ( 
@@ -21,30 +21,26 @@ const Profile = () => {
         <button className="profile__information__leave__button">Log out</button>
       </div>
       <div className="profile__active">
-        <Link to="#" className="profile__active__add__item">+</Link>
+        <Link to="/additem" className="profile__active__add__item">+</Link>
         <header className="profile__active__header">
           <Link to="/" className="profile__active__header-link">
             <div className="box box1"></div>
             <div className="box box2"></div>
             Main page</Link>
-          <Link to="#" className="profile__active__header-link">
+          <Link to="/marketplace" className="profile__active__header-link">
             <div className="box box1"></div>
             <div className="box box2"></div>
             Marketplace
           </Link>
-          <Link to="#" className="profile__active__header-link">
-            <div className="box box1"></div>
-            <div className="box box2"></div>
-            Popular sellers
-          </Link>
         </header>
         <div className="profile__active__items">
-          {false && <div className="profile__active__items__noitems">
+          {
+            false && <div className="profile__active__items__noitems">
             <div className="profile__active__items__noitems__text">No items here :(</div>
             <Link to="#" className="profile__active__items__noitems__link">Add new item</Link>
-          </div>}
-          
-          <Item itemLink="#" imageLink={"images/box1.jpg"} itemName={"Test item name"} shortDescription={"Test short description junk junk junk junk junk junk junk junkjunkjunkjunk junkjunkjunk"}></Item>
+            </div>
+          }
+          <ItemList></ItemList>
         </div>
       </div>
     </div>
