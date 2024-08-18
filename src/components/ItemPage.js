@@ -5,7 +5,7 @@ const ItemPage = () => {
   const { id } = useParams()
   return ( 
     <div className="itempage">
-    {id}
+    {id}123
     </div>
   );
 }
